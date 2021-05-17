@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* height: 100%; */
+}
+
+body {
+    background: rgba( 209, 202, 202, 0.70 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.0px );
+-webkit-backdrop-filter: blur( 7.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.keyboard {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 110px;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.white {
+    width: 9%;
+    min-width: 60px;
+    height: 70%;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #000;
+    background: rgba( 255, 255, 255, 0.70 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.0px );
+-webkit-backdrop-filter: blur( 3.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.black {
+    width: 8%;
+    height: 45%;
+    margin-left: -4%;
+    margin-right: -4%;
+    z-index: 2;
+    background-color: black;
+    color: #fff;
+    background: rgba( 10, 0, 0, 0.70 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20.0px );
+-webkit-backdrop-filter: blur( 20.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.white.active {
+    background-color: #ccc;
+}
+
+.black.active {
+    background-color: #333;
+}
